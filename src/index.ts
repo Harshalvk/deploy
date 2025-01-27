@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Response, Request } from "express";
 
 const app = express();
 const PORT = 3000;
@@ -27,11 +27,11 @@ const todos = [
   },
 ];
 
-app.get("/success", (req, res) => {
+app.get("/success", (req: Request, res: Response) => {
   res.send("Server is running");
 });
 
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res: Response) => {
   res.json({ todos });
 });
 
