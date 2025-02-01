@@ -40,6 +40,10 @@ app.get("/ci", (req: Request, res: Response) => {
   res.send({ msg: "ci working" });
 });
 
+app.get("/newci", (req: Request, res: Response) => {
+  res.send({ msg: "ci working" });
+});
+
 app.listen(PORT, () => {
   console.log("⚙ Server is listening!");
 });
