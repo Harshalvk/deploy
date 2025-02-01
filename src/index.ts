@@ -8,6 +8,7 @@ const todos = [
     id: 1,
     task: "workout",
     completed: false,
+    
     priority: "medium",
     dueDate: "2023-10-15",
   },
