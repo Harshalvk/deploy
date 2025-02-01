@@ -8,7 +8,7 @@ const todos = [
     id: 1,
     task: "workout",
     completed: false,
-    
+
     priority: "medium",
     dueDate: "2023-10-15",
   },
@@ -34,6 +34,10 @@ app.get("/success", (req: Request, res: Response) => {
 
 app.get("/", (req: Request, res: Response) => {
   res.json({ todos });
+});
+
+app.get("/ci", (req: Request, res: Response) => {
+  res.send({ msg: "ci working" });
 });
 
 app.listen(PORT, () => {
